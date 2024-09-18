@@ -1022,9 +1022,10 @@ img {
     overflow-x: scroll;
     /* width */
     &::-webkit-scrollbar {
-        width: 0px;
+        width: 0;
         height: 0;
         border-radius: 999px;
+        display: none;
     }
 
     /* Track */
