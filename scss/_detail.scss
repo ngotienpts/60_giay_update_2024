@@ -245,3 +245,37 @@
         color: #e40c14;
     }
 }
+
+
+// update
+.detail-primary {
+    .w-1140 {
+        max-width: 790px;
+    }
+    .detail-content {
+        padding-left: 0;
+        width: 100%;
+
+        figure {
+            &:first-of-type {
+                max-width: 1140px;
+                margin-left: calc((1140px - 790px)/2 * -1);
+                margin-right: calc((1140px - 790px)/2 * -1);
+            }
+        }
+    }
+
+    .social-item {
+        margin-right: 15px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.realted-news {
+    .heading-one {
+        padding-left: 12px;
+        border-left: 4px solid #000;
+    }
+}

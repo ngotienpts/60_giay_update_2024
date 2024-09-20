@@ -19,6 +19,17 @@
     // --------------------------------------------------------------------cate
 
     // --------------------------------------------------------------------detail
+    .detail-primary {
+        .detail-content {
+            figure {
+                &:first-of-type {
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+            }
+        }
+
+    }
 
     // --------------------------------------------------------------------footer
 }
@@ -125,6 +136,18 @@
             margin-top: 40px;
         }
     }
+
+    .main-primary {
+        &__container {
+            .article-img {
+                width: 100%;
+            }
+
+            .article-title {
+                font-size: 30px;
+            }
+        }
+    }
     .section-primary {
         &__left {
             .article {
@@ -219,10 +242,12 @@
         max-height: 678px;
         overflow: auto;
     }
+
     // --------------------------------------------------------------------cate
     .cate-primary {
         &__container {
             border-bottom: none;
+            padding-bottom: 10px;
             .article {
                 padding: 20px 0;
                 border-bottom: 1px solid #e5e5e5;
@@ -266,6 +291,27 @@
         padding-left: 0;
         width: 100%;
     }
+    .detail-primary {
+        .social {
+            margin-top: 20px;
+        }
+    }
+    .realted-news {
+        .article {
+            display: block;
+
+            &:first-child {
+                padding-top: 0;
+            }
+        }
+        .article-img {
+            width: 100%;
+        }
+        .article-content {
+            padding-top: 12px;
+            padding-left: 0;
+        }
+    }
     // --------------------------------------------------------------------footer
 }
 
@@ -307,6 +353,18 @@
     }
 
     // --------------------------------------------------------------------index
+    .main-primary {
+        padding-left: 0;
+        padding-right: 0;
+        &__container {
+            .article-content {
+                padding: 15px;
+            }
+            .article-title {
+                font-size: 24px;
+            }
+        }
+    }
     .box-media {
         &__container {
             padding: 15px;

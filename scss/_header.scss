@@ -127,6 +127,9 @@
         &:last-child {
             margin-right: 0;
         }
+        &:hover .navbar-dropdown {
+            display: block;
+        }
     }
 
     &-link {
@@ -135,6 +138,31 @@
             height: auto;
         }
     }
+
+    &-dropdown {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        min-width: 150px;
+        background-color: white;
+        z-index: 100;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+        display: none;
+
+        &__item {
+            a {
+                padding: 12px 10px;
+                display: flex;
+            }
+            &:hover a {
+                color: #ffffff;
+                background-color: #c5161d;
+                
+            }
+        }
+    }
+
+    
 }
 
 .search-mb {
@@ -178,3 +206,76 @@
         background: transparent;
     }
 } 
+
+.sub-menu {
+    .icon-bar {
+        position: absolute;
+        top: 50%;
+        left: -15px;
+        transform: translateY(calc(-50% - 5px));
+          img {
+              width: 20px;
+              height: auto;
+          } 
+    }
+    &__content {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 17.5rem;
+        height: 100%;
+        background-color: #181716;
+        z-index: 100;
+        box-shadow: 0px 11px 15px -7px rgba(var(--ipt-baseAlt-rgb), 0.2),
+            0px 24px 38px 3px rgba(var(--ipt-baseAlt-rgb), 0.14),
+            0px 9px 46px 8px rgba(var(--ipt-baseAlt-rgb), 0.12);
+        transform: translateX(-100%);
+        transition: all 0.2s ease;
+    }
+
+    &__close {
+        width: 3rem;
+        height: 3rem;
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__container {
+        height: calc(100% - 100px);
+        overflow: auto;
+    }
+    &__item {
+        &.active .heading-sub__arrow img {
+            color: #fff;
+            transform: rotate(-90deg);
+        }
+    }
+    &.active &__content {
+        transform: translate(0);
+    }
+    &.active .overlay {
+        opacity: 1;
+        visibility: visible;
+        z-index: 99;
+    }
+}
+.heading-sub__arrow img {
+    transition: all 0.2s ease 0s;
+    transform: rotate(90deg);
+}
+.list-sub {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+.item-sub {
+    &__link {
+        display: flex;
+        padding: 0.5rem 1rem 0.5rem 3.125rem;
+        color: #fff;
+    }
+    &:last-child .item-sub__link {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+    }
+}
