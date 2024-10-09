@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const backTop = document.querySelector("#back-top");
     const stickyHeaderPC = document.querySelector(".js__stickyHeader");
     const video169s = document.querySelectorAll(".js__video169");
+    const video916s = document.querySelectorAll(".js__video916");
+
 
     // search mb
     const searchMbs = document.querySelectorAll(".js__searchMb");
@@ -77,6 +79,20 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
+    function handleVideo916() {
+        if (video916s) {
+            video916s.forEach((video916) => {
+                var videos = video916.querySelectorAll("iframe");
+                if (videos) {
+                    videos.forEach((video) => {
+                        var w = video.offsetWidth;
+                        video.style.height = (w * 16) / 9 + "px";
+                    });
+                }
+            });
+        }
+    }
+
     // Xử lý sự kiện show search mb
     function handleShowSearchMb() {
         if (!searchMbs) return;
@@ -133,6 +149,7 @@ document.addEventListener("DOMContentLoaded", function () {
         handleShowDropdownSubMenu();
         handleShowSearchMb();
         handleVideo169();
+        handleVideo916();
         handleWindowScroll();
     }
 
