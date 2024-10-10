@@ -1994,7 +1994,7 @@ video {
   padding-left: 15px;
 }
 .cate-primary__container .image-wrapper::before {
-  content: "";
+  content: none;
   position: absolute;
   z-index: 1;
   bottom: 0;
@@ -2004,10 +2004,8 @@ video {
   background-image: linear-gradient(180deg, transparent, #fff);
 }
 .cate-primary__container .article-content {
-  margin-top: -30px;
-  padding: 0 30px;
+  padding-top: 20px;
   position: relative;
-  z-index: 10;
 }
 
 /* profile */
@@ -2618,7 +2616,7 @@ video {
     padding-top: 0;
   }
   .cate-primary__container .article-title {
-    font-size: 30px;
+    font-size: 24px;
   }
 
   .cate-secondary__container {
@@ -2748,7 +2746,7 @@ video {
   }
 
   .cate-primary__container .article-content {
-    padding: 0 20px;
+    padding-top: 15px;
   }
   .cate-primary__container .article-title {
     font-size: 24px;
