@@ -553,9 +553,15 @@ img {
 .bg-yellow-c3 {
   background-color: #C3DD22;
 }
+.bg-yellow-fc {
+  background-color: #FCBA63;
+}
 
 .bg-pink-ea {
   background-color: #EAEBFF;
+}
+.bg-green-a9 {
+  background-color: #A9DA7E;
 }
 
 /*=================================================================*/
@@ -1450,6 +1456,9 @@ img {
 .border-e5 {
   border-bottom: 1px solid #e5e5e5;
 }
+.border-001 {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
 
 video {
   aspect-ratio: 16/9;
@@ -1471,7 +1480,9 @@ video {
   width: 23px;
 }
 .header-index__list {
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  overflow: auto;
 }
 .header-index__item {
   margin-right: 24px;
@@ -1506,6 +1517,21 @@ video {
   width: auto;
 }
 
+.login-icon {
+  border: 1px solid #737373;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+}
+.login-icon:hover {
+  border-color: #FF006E;
+}
+.social {
+  flex-wrap: wrap;
+}
 .social-link {
   border: 1px solid #737373;
   border-radius: 50%;
@@ -1629,12 +1655,7 @@ video {
 }
 
 .sub-menu .icon-bar {
-  /* position: absolute;
-  top: 50%;
-  left: -15px;
-  transform: translateY(calc(-50% - 5px)); */
-
-  margin-right:-15px;
+  margin-left:-15px;
 }
 .sub-menu .icon-bar img {
   width: 20px;
@@ -1781,6 +1802,9 @@ video {
 .section-primary__right {
   /* margin-top: 10px; */
 }
+.section-primary__right .top-stories {
+  border-radius: 7px;
+}
 .section-primary__right .top-stories .heading-one {
   font-size: 18px;
   font-weight: bold;
@@ -1800,7 +1824,7 @@ video {
   margin-top: 15px;
 }
 .section-primary__right .top-stories .article-content {
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 .section-primary__right .more-series {
   border-radius: 7px;
@@ -1810,7 +1834,11 @@ video {
   bottom: 0;
 }
 .section-primary__right .more-series .heading-one {
-  border-left: 3px solid #B5298C;
+  border-left: 3px solid #BE6C00;
+  padding-left: 10px;
+}
+.section-primary__right .your-money .heading-one {
+  border-left: 3px solid #316900;
   padding-left: 10px;
 }
 .section-primary__right .more-series .article-bot .article-text {
@@ -1828,8 +1856,7 @@ video {
   left: 0;
 }
 .section-primary__right .podcast {
-  border-radius: 7px;
-  padding: 20px 15px;
+  padding: 0;
 }
 .section-primary__right .podcast .heading-one {
   border-left: 3px solid #000;
@@ -2430,9 +2457,9 @@ video {
   }
 
   .header-index__list {
-    flex-wrap: nowrap;
+    /* flex-wrap: nowrap;
     white-space: nowrap;
-    overflow: auto;
+    overflow: auto; */
   }
   .header-top .social {
     padding-left: 20px;
@@ -2487,7 +2514,7 @@ video {
   }
 
   .main-primary {
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 20px;
   }
   .main-primary__left .article-title {
