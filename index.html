@@ -227,11 +227,192 @@
                         
                         <!-- login -->
                         <div class="login ml-20">
-                            <!-- icon -->
-                            <div class="login-icon">
-                                <img src="./images/svg/user.svg" alt="">
+                            <!-- not logged -->
+                            <div class="not-logged">
+                                <!-- icon -->
+                                <div class="login-icon js__showPopupLogin">
+                                    <img src="./images/svg/user.svg" alt="">
+                                </div>
+                                <!-- end icon -->
+                                <div class="js__popupLoginContainer">
+                                    <div class="content text-white js__popupLogin">
+                                        <!-- top -->
+                                        <div class="content-top d-3xl-flex items-center justify-between border-e5 pb-16 w-full">
+                                            <div class="content-top__logo">
+                                                <img src="./images/svg/logo.svg" alt="">
+                                            </div>
+                                            <div class="content-top__close pointer js__closePopupLogin">
+                                                <img src="./images/svg/close-gray.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <!-- end top -->
+
+                                        <!-- main -->
+                                        <div class="content-main w-full js__loginContainerForm">
+                                            <!-- login -->
+                                            <div class="content-main__login active js__loginForm">
+                                                <!-- heading -->
+                                                <div class="heading d-3xl-flex items-center justify-center border-e5 w-full mt-20">
+                                                    <span class="heading-1 fs-24 fw-700 text-blue-47 active">Đăng nhập</span>
+                                                    <span class="heading-2 fs-24 fw-700 text-blue-47 js__registerBtn">Đăng ký</span>
+                                                </div>
+                                                <!-- end heading -->
+
+                                                <!--  -->
+                                                <ul class="social d-3xl-flex justify-center d-md-none items-center my-16">
+                                                    <li class="social-item ml-8">
+                                                        <a href="https://www.facebook.com/Theanh28.60giay" class="social-link">
+                                                            <img src="https://sf.ex-cdn.com/60giay.com/v0.0.223/templates/themes/images/svg/fb-gray.svg" alt="" loading="lazy">
+                                                        </a>
+                                                    </li>
+                                                    <li class="social-item ml-8">
+                                                        <a href="https://www.threads.net/@28_unique" class="social-link">
+                                                            <img src="https://sf.ex-cdn.com/60giay.com/v0.0.223/templates/themes/images/svg/threads-gray.svg" alt="" loading="lazy">
+                                                        </a>
+                                                    </li>
+                                                    <li class="social-item ml-8">
+                                                        <a href="#" class="social-link">
+                                                            <img src="https://sf.ex-cdn.com/60giay.com/v0.0.223/templates/themes/images/svg/twitter-gray.svg" alt="" loading="lazy">
+                                                        </a>
+                                                    </li>
+                                                 </ul>
+                                                <!--  -->
+
+                                                <div>
+                                                    <p class="text-center fs-15 fw-600 lh-140 text-gray-44 mb-10 font-arial">hoặc</p>
+                                                    <p class="text-center fs-15 lh-140 text-gray-44 mb-10 font-arial">Vui lòng nhập thông tin cá nhân</p>
+                                                </div>
+
+                                                <!-- form -->
+                                                <div class="form form-container mb-10">
+                                                    <form action="">
+                                                        <div class="form-group mb-10">
+                                                            <input type="text" class="form-input" placeholder="Tên đăng nhập">
+                                                            <p class="mess-error">Tên đăng nhập không chính xác</p>
+                                                        </div>
+                                                        <div class="form-group mb-10">
+                                                            <input type="password" class="form-input" placeholder="Mật khẩu">
+                                                            <p class="mess-error">Mật khẩu không đúng</p>
+                                                        </div>
+
+                                                        <button class="btn form-submit">Đăng nhập</button>
+                                                    </form>
+                                                </div>
+                                                <!-- end form -->
+
+                                                <button class="btn btn-forgot js__forgotBtn">Quên mật khẩu</button>
+                                            </div>
+                                            <!-- end login -->
+                                            <!-- register -->
+                                            <div class="content-main__register js__registerForm">
+                                                <!-- heading -->
+                                                <div class="heading d-3xl-flex items-center justify-center border-e5 w-full mt-20">
+                                                    <span class="heading-1 fs-24 fw-700 text-blue-47 js__loginBtn">Đăng nhập</span>
+                                                    <span class="heading-2 fs-24 fw-700 text-blue-47 active">Đăng ký</span>
+                                                </div>
+                                                <!-- end heading -->
+
+                                                <!--  -->
+                                                <ul class="social d-3xl-flex justify-center d-md-none items-center my-16">
+                                                    <li class="social-item ml-8">
+                                                        <a href="https://www.facebook.com/Theanh28.60giay" class="social-link">
+                                                            <img src="https://sf.ex-cdn.com/60giay.com/v0.0.223/templates/themes/images/svg/fb-gray.svg" alt="" loading="lazy">
+                                                        </a>
+                                                    </li>
+                                                    <li class="social-item ml-8">
+                                                        <a href="https://www.threads.net/@28_unique" class="social-link">
+                                                            <img src="https://sf.ex-cdn.com/60giay.com/v0.0.223/templates/themes/images/svg/threads-gray.svg" alt="" loading="lazy">
+                                                        </a>
+                                                    </li>
+                                                    <li class="social-item ml-8">
+                                                        <a href="#" class="social-link">
+                                                            <img src="https://sf.ex-cdn.com/60giay.com/v0.0.223/templates/themes/images/svg/twitter-gray.svg" alt="" loading="lazy">
+                                                        </a>
+                                                    </li>
+                                                 </ul>
+                                                <!--  -->
+
+                                                <div>
+                                                    <p class="text-center fs-15 fw-600 lh-140 text-gray-44 mb-10 font-arial">hoặc</p>
+                                                    <p class="text-center fs-15 lh-140 text-gray-44 mb-10 font-arial">Vui lòng nhập thông tin cá nhân</p>
+                                                </div>
+
+                                                <!-- form -->
+                                                <div class="form form-container mb-10">
+                                                    <form action="">
+                                                        <div class="form-group mb-10">
+                                                            <input type="text" class="form-input" placeholder="Tên đăng nhập">
+                                                            <p class="mess-error">Tên đăng nhập không chính xác</p>
+                                                        </div>
+                                                        <div class="form-group mb-10">
+                                                            <input type="password" class="form-input" placeholder="Mật khẩu">
+                                                            <p class="mess-error">Mật khẩu không đúng</p>
+                                                        </div>
+                                                        <div class="form-group mb-10">
+                                                            <input type="email" class="form-input" placeholder="Email">
+                                                            <p class="mess-error">Email không hợp lệ</p>
+                                                        </div>
+
+                                                        <button class="btn form-submit">Đăng ký</button>
+                                                    </form>
+                                                </div>
+                                                <!-- end form -->
+                                            </div>
+                                            <!-- end register -->
+                                            <!-- forgotpassword -->
+                                            <div class="content-main__forgot js__forgotForm">
+                                                <!-- heading -->
+                                                <div class="heading d-3xl-flex items-center justify-center border-e5 w-full my-20">
+                                                    <span class="heading-1 fs-24 fw-700 text-blue-47 active">Đặt lại mật khẩu</span>
+                                                </div>
+                                                <!-- end heading -->
+                                                <div>
+                                                    <p class="text-center fs-15 lh-140 text-gray-44 mb-10 font-arial">Nhập email của bạn để lấy lại mật khẩu</p>
+                                                </div>
+                                                <!-- form -->
+                                                <div class="form form-container mb-10">
+                                                    <form action="">
+                                                        <div class="form-group mb-10">
+                                                            <input type="email" class="form-input" placeholder="Email">
+                                                            <p class="mess-error">Email không đúng</p>
+                                                        </div>
+
+                                                        <button class="btn form-submit">Lấy lại mật khẩu</button>
+                                                    </form>
+                                                </div>
+                                                <!-- end form -->
+                                            </div>
+                                            <!-- end forgotpassword -->
+                                        </div>
+                                        <!-- end main -->
+                                    </div>
+                                    <div class="overlay js__overlay"></div>
+                                </div>
                             </div>
-                            <!-- end icon -->
+                            <!-- end not logged -->
+                            
+                            <!-- logged -->
+                            <div class="logged d-3xl-none">
+                                <div class="logged-container relative js__dropdownContainer">
+                                    <div class="logged-heading d-3xl-flex items-center js__showDropdown">
+                                        <div class="avatar mr-8">
+                                            <img src="./images/3.jpg" alt="">
+                                        </div>
+                                        <h3 class="text fs-13 fw-700 text-gray-66 font-arial mr-4 d-sm-none">Thanh Hoài</h3>
+                                        <div class="icon">
+                                            <img src="./images/svg/Article-Video-2.svg" alt="">
+                                        </div>
+                                    </div>
+        
+                                    <ul class="logged-content absolute dropdownContent js__dropdownContent">
+                                        <li class="logged-item"><a href="#" class="logged-link">Tài khoản</a></li>
+                                        <li class="logged-item log-out">Đăng xuất</li>
+                                    </ul>
+        
+                                    <div class="overlay js__overlay"></div>
+                                </div>
+                            </div>
+                            <!-- end logged -->
                         </div>
                         <!-- end login -->
                     </div>
