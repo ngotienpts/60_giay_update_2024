@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- favicon -->
+        <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+        <!-- end favicon -->
+        <title>cmt</title>
+        <!-- font -->
+    <body>
+        <style>
+            
+            html {
+                box-sizing: border-box;
+                scroll-behavior: smooth;
+                -ms-text-size-adjust: 100%;
+                -webkit-text-size-adjust: 100%;
+            }
+
+            * {
+                margin: 0;
+                padding: 0;
+                -webkit-tap-highlight-color: transparent;
+            }
+
+            *,
+            *:before,
+            *:after {
+                 box-sizing: border-box;
+            }
+
+            body {
+            position: relative;
+                font-family: "arial", sans-serif;
+                font-weight: 400;
+                font-size: 1rem;
+                font-style: normal;
+                text-rendering: geometricPrecision;
+                line-height: 1.3;
+                color: #000;
+                background-color: #fff;
+            }
+
+            input,
+            textarea,
+            select,
+            button {
+            outline: none;
+            font-family: "arial", sans-serif;
+            text-rendering: geometricPrecision;
+            border: 0;
+            color: #000;
+            font-size: 1rem;
+            background-color: transparent;
+            }
+
+            input {
+            line-height: normal;
+            }
+
+            label,
+            button {
+            cursor: pointer;
+            }
+
+            a {
+            text-decoration: unset;
+            color: inherit;
+            }
+            /* --------------------------------- end default */
+
+
+            /* -------------------------------------------  customer */
+            .w-1140 {
+                max-width: 1140px;
+                margin: auto;
+            }
+
+            /*=================================================================*/
+            .d-3xl-flex {
+                display: flex;
+            }
+
+            .d-3xl-grid {
+                display: grid;
+            }
+
+            .d-3xl-block {
+                display: block;
+            }
+
+            /*=================================================================*/
+            .text-center {
+                text-align: center;
+            }
+
+            .text-right {
+                text-align: right;
+            }
+
+            .text-left {
+               text-align: left;
+            }
+        
+            /*=================================================================*/
+            .items-center {
+                align-items: center;
+            }
+
+            .justify-between {
+                justify-content: space-between;
+            }
+
+            .justify-center {
+                justify-content: center;
+            }
+
+            .flex-0 {
+                flex-shrink: 0;
+            }
+
+            .flex-1 {
+                flex: 1;
+            }
+
+            /*=================================================================*/
+            .overflow-hidden {
+                overflow: hidden;
+            }
+
+            /*=================================================================*/
+            .fs-20 {
+                font-size: 20px;
+            }
+
+            /*=================================================================*/
+            .py-10 {
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            .px-15 {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            .py-20 {
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+            .mb-20 {
+                margin-bottom: 20px;
+            }
+            .mt-20 {
+                margin-top: 20px;
+            }
+
+            /*=================================================================*/
+            .relative {
+                position: relative;
+            }
+            .absolute {
+                position: absolute;
+            }
+           
+            /*=================================================================*/
+            .z-10 {
+                z-index: 10;
+            }
+            .z-20 {
+                z-index: 20;
+            }
+            .z-50 {
+                z-index: 50;
+            }
+            
+            /* ---------------------------------  responsive  */ 
+            @media (max-width: 1536px) {
+                .d-2xl-none {
+                    display: none;
+                }
+
+                .d-2xl-block {
+                    display: block;
+                }
+
+                .d-2xl-flex {
+                    display: flex;
+                }
+
+                .d-2xl-grid {
+                    display: grid;
+                }
+
+            }
+            @media (max-width: 1280px) {
+                .d-xl-none {
+                    display: none;
+                }
+
+                .d-xl-block {
+                    display: block;
+                }
+
+                .d-xl-flex {
+                    display: flex;
+                }
+
+                .d-xl-grid {
+                    display: grid;
+                }
+            }
+
+            @media (max-width: 1024px) {
+                .d-lg-none {
+                    display: none;
+                }
+
+                .d-lg-block {
+                    display: block;
+                }
+
+                .d-lg-flex {
+                    display: flex;
+                }
+
+                .d-lg-grid {
+                    display: grid;
+                }
+
+            }
+
+            @media (max-width: 992px) {
+                .d-md-none {
+                    display: none;
+                }
+
+                .d-md-block {
+                    display: block;
+                }
+
+                .d-md-flex {
+                    display: flex;
+                }
+
+                .d-md-grid {
+                    display: grid;
+                }
+
+            }
+
+            @media (max-width: 767px) {
+                .d-sm-none {
+                    display: none;
+                }
+
+                .d-sm-block {
+                    display: block;
+                }
+
+                .d-sm-flex {
+                    display: flex;
+                }
+
+                .d-sm-grid {
+                    display: grid;
+                }
+
+            }
+
+        </style>
+        
+       <!-- box cmt -->
+       <div class="cmt-box px-15 relative overflow-hidden">
+            <div class="cmt-box__container w-1140 py-20">
+                <h2 class="cmt-box__heading fs-20 fw-600">Ý kiến <span>(65)</span></h2>
+                <div class="cmt-box__content">
+                    <!-- form top  -->
+                    <div class="form-top">
+                        <form id="">
+                            <div class="input-top">
+                                <div class="box-area-input">
+                                    <textarea id="txtComment" class="txt_comment" placeholder="Chia sẻ ý kiến của bạn"></textarea>
+                                </div>
+                                <span class="invalid">Bạn chưa nhập nội dung bình luận.</span>
+                            </div>
+                            
+                            <div class="input-bot">
+                                <div class="input-group">
+                                    <input type="text" placeholder="Họ và tên" class="txt_fullname">
+                                </div>
+                                <div class="block_btn_send">
+                                    <button type="button" value="Gửi" class="btn_send_comment">Gửi</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- end form top  -->
+
+                    <!-- result -->
+                    <div class="result js__changeTabCmtContainer">
+                        <!-- result tab -->
+                        <div class="result-tab d-3xl-flex items-center">
+                            <div class="tab-item js__tabCmt active">Quan tâm nhất</div>
+                            <div class="tab-item js__tabCmt">Mới nhất</div>
+                        </div>
+                        <!-- end result tab -->
+
+                        <!-- result pane -->
+                        <div class="result-pane">
+                            <!-- item -->
+                            <div class="pane-item js__paneCmt active">
+                                <div class="cmt-box__list">
+                                    <!-- item -->
+                                    <div class="cmt-box__item">
+                                        <!-- avatar -->
+                                        <div class="avtar">
+                                            <img src="./images/2.jpg" alt="">
+                                        </div>
+                                        <!-- end avatar -->
+                                    </div>
+                                    <!-- end item -->
+                                </div>
+                            </div>
+                            <!-- end item -->
+                            <!-- item -->
+                            <div class="pane-item js__paneCmt">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio reiciendis illo temporibus natus velit necessitatibus doloribus adipisci expedita saepe tempora, quo iste consequatur odit error vel, quasi recusandae, accusamus delectus?
+                            </div>
+                            <!-- end item -->
+                        </div>
+                        <!-- end result pane -->
+
+                    </div>
+                    <!-- end result -->
+
+
+                </div>
+            </div>
+       </div>
+       <!-- end box cmt -->
+
+        <script>
+
+        </script>
+    </body>
+</html>
